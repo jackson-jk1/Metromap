@@ -33,7 +33,7 @@
         let formData = new FormData(thisForm);
         formData.append('recaptcha-response', recaptchaResponse);
   
-        emailjs.init("YOUR_PUBLIC_KEY");  // Replace with your public key
+        emailjs.init("4OxBeNYeQ8tF1jMPl");  // Replace with your public key
   
         emailjs.send("GmailService", "template_pkbg55q", {
           name: formData.get('name'),

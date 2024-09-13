@@ -7,9 +7,6 @@
 */
 
 (function() {
-  (function() {
-    emailjs.init("ZKdTM1cWTPHYUuuYR"); // Substitua "YOUR_PUBLIC_KEY" pela chave pública do EmailJS
-  })();
   "use strict";
   const mobileNavToggle = document.querySelector('#navToggle');
   const body = document.querySelector('body');

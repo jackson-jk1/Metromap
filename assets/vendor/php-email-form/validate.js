@@ -40,7 +40,7 @@
           email: formData.get('email'),
           phone: formData.get('phone'),
           message: formData.get('message'),
-          'recaptcha-response': recaptchaResponse
+          'g-recaptcha-response': recaptchaResponse
         }).then(() => {
           thisForm.querySelector('.loading').classList.remove('d-block');
           thisForm.querySelector('.sent-message').classList.add('d-block');

@@ -19,15 +19,11 @@
         let action = thisForm.getAttribute('action');
         let recaptcha = thisForm.getAttribute('data-recaptcha-site-key');
   
-        if (!action) {
-          displayError(thisForm, 'The form action property is not set!');
-          return;
-        }
   
         let recaptchaResponse = grecaptcha.getResponse();
   
         if (!recaptchaResponse) {
-          displayError(thisForm, 'Please complete the reCAPTCHA.');
+          displayError(thisForm, 'Confirme que não é um robo.');
           return;
         }
   

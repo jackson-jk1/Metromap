@@ -2513,7 +2513,3 @@ h3.novoH3 {
   color: #fff; /* Cor do ícone */
   font-size: 24px; /* Tamanho do ícone */
 }
-
-.whatsapp-icon:hover {
-  transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
-}

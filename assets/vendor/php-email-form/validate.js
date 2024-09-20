@@ -46,6 +46,12 @@
           thisForm.querySelector('.sent-message').classList.add('d-block');
           thisForm.reset();
           grecaptcha.reset(); // Reset reCAPTCHA
+
+          setTimeout(() => {
+            thisForm.querySelector('.sent-message').classList.remove('d-block');
+            document.querySelector('.g-recaptcha').style.display = 'none';
+            
+          }, 10000); 
         }).catch((error) => {
           console.error('EmailJS error:', error);
           displayError(thisForm, 'Failed to send the email. Please try again later.');
@@ -105,5 +111,6 @@
         el.innerHTML = '';
       });
     }
-
   })();
+
+  

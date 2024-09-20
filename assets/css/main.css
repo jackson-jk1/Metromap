@@ -1,10 +1,5 @@
 /**
-* Template Name: UpConstruction
-* Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 /*--------------------------------------------------------------
 # Font & Color Variables
@@ -386,12 +381,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--background-color);
   background-size: cover;
   font-size: 14px;
-  position: relative;
 }
 
-  .footer .container {
-      position: relative;
-  }
 
   .footer:before {
       content: "";
@@ -506,6 +497,32 @@ h1, h2, h3, h4, h5, h6 {
       margin-top: 8px;
       font-size: 13px;
   }
+
+  .container {
+    overflow: hidden;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo-slider {
+    display: flex;
+    align-items: center;
+    animation: scroll 30s linear infinite; /* Velocidade ajustada */
+}
+
+.logo-slider img {
+    width: 150px; /* Ajuste o tamanho das imagens conforme necessário */
+    padding: 0 10px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Logos aparecem já no início */
+    }
+    100% {
+        transform: translateX(-50%); /* Movimenta até metade para o loop */
+    }
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -967,9 +984,9 @@ section, .section {
 --------------------------------------------------------------*/
 .services .service-item {
   background-color: var(--surface-color);
-  padding: 40px;
+  padding: 20px;
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
-  height: 100%;
+  min-height: 600px;
 }
 
   .services .service-item .icon {
@@ -2446,7 +2463,7 @@ h3.novoH3 {
 }
 
 .logo-slider-container {
-  overflow-x: auto; /* Habilita rolagem horizontal */
+  overflow-x: hidden; /* Habilita rolagem horizontal */
   white-space: nowrap;
   width: 100%; /* Ajuste conforme necessário */
   height: 100px; /* Altura do container */
@@ -2470,7 +2487,7 @@ h3.novoH3 {
 
 .custom-image {
   width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
-  height: 256px; /* Define o tamanho máximo da altura */
+  height: 300px; /* Define o tamanho máximo da altura */
   object-fit: cover; /* Escalona e corta a imagem, mantendo as proporções */
 }
 

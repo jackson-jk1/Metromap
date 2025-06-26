@@ -2514,19 +2514,22 @@ h3.novoH3 {
   z-index: 1000; /* Garante que o ícone esteja acima de outros elementos */
 }
 
+/* Estilos do botão WhatsApp */
 .whatsapp-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px; /* Largura do ícone */
-  height: 60px; /* Altura do ícone */
-  background-color: #25D366; /* Cor de fundo do ícone */
-  border-radius: 50%; /* Deixa o ícone circular */
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Adiciona uma sombra ao ícone */
-  transition: transform 0.3s ease; /* Transição suave ao passar o mouse */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366; /* Cor do WhatsApp */
+    color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer; /* <--- Adicione esta linha! */
+    transition: background-color 0.3s ease;
 }
 
-.whatsapp-icon i {
-  color: #fff; /* Cor do ícone */
-  font-size: 24px; /* Tamanho do ícone */
+.whatsapp-icon:hover {
+    background-color: #1da851;
 }

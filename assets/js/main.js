@@ -5,6 +5,22 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+function redirectToWhatsApp() {
+  const phoneNumber = '5541995996329';
+  const whatsappUrl = `https://wa.me/${phoneNumber}`;
+  
+  // Abre o link em uma nova aba
+  window.open(whatsappUrl, '_blank');
+}
+
+// Adiciona um 'listener' de evento ao botão do WhatsApp
+// Isso garante que a função redirectToWhatsApp() seja chamada quando o botão for clicado
+document.addEventListener('DOMContentLoaded', function() {
+  const whatsappButton = document.getElementById('whatsappButton');
+  if (whatsappButton) {
+    whatsappButton.addEventListener('click', redirectToWhatsApp);
+  }
+});
 
 (function() {
   "use strict";
